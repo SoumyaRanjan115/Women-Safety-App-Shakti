@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# 🛡️ Shakti – Women Safety App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A smart women safety mobile application built using **Expo (React Native)** and **Firebase**, featuring an intelligent contextual **Danger Score System** for proactive risk awareness.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Project Overview
 
-   ```bash
-   npm install
-   ```
+**Shakti** is designed to enhance personal safety through:
 
-2. Start the app
+- 🚨 One-tap SOS emergency trigger  
+- 📍 Real-time location tracking  
+- 🧠 Context-aware Danger Score system  
+- 📊 Incident history tracking  
+- 🔥 Cloud-based logging with Firebase  
 
-   ```bash
-   npx expo start
-   ```
+This app was developed as a mini project focusing on practical safety technology with scalable AI-ready architecture.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# ✨ Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚨 1. One-Tap SOS Emergency System
 
-## Get a fresh project
+- Large central SOS button
+- Sends emergency alert with:
+  - Live GPS location
+  - Timestamp
+  - Danger Score
+- Logs incident in Firestore for future analysis
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🧠 2. Smart Danger Score System (Contextual ML Logic)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+A lightweight rule-based ML-style scoring engine that calculates risk (0–100) based on:
 
-## Learn more
+### 🔎 Risk Factors
 
-To learn more about developing your project with Expo, look at the following resources:
+| Factor | Condition | Risk Impact |
+|--------|----------|------------|
+| 🌙 Time | 11 PM – 4 AM | High Risk |
+| 🚗 Speed | > 25 km/h | Medium Risk |
+| 📍 Location | Outside known safe zones | Risk Increase |
+| 🧾 Past Incidents | SOS within 500m radius | Risk Increase |
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+### 🎯 Danger Levels
 
-Join our community of developers creating universal apps.
+| Score Range | Level | UI Color |
+|-------------|--------|---------|
+| 0 – 30 | SAFE | 🟢 Green |
+| 31 – 60 | CAUTION | 🟡 Yellow |
+| 61 – 100 | HIGH RISK | 🔴 Red |
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📊 3. Firestore Incident Logging
+
+Every SOS event logs:
+
+- Latitude
+- Longitude
+- Speed
+- Timestamp
+- Danger Score
+- Danger Level
+- Reasons for scoring
+
+Path:
