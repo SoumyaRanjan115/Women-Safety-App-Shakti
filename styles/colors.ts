@@ -1,0 +1,78 @@
+// Color constants matching the Tailwind design
+export const colors = {
+  light: {
+    background: '#f8fafc',
+    surface: '#ffffff',
+    text: '#1e293b',
+    textSecondary: '#64748b',
+    textMuted: '#94a3b8',
+    border: '#e2e8f0',
+    rose: {
+      50: '#fff1f2',
+      100: '#ffe4e6',
+      200: '#fecdd3',
+      300: '#fda4af',
+      400: '#fb7185',
+      500: '#f43f5e',
+      600: '#e11d48',
+      700: '#be123c',
+      800: '#9f1239',
+      900: '#881337',
+    },
+    red: {
+      50: '#fef2f2',
+      100: '#fee2e2',
+      500: '#ef4444',
+      600: '#dc2626',
+    },
+    emerald: {
+      50: '#ecfdf5',
+      100: '#d1fae5',
+      500: '#10b981',
+      600: '#059669',
+    },
+    slate: {
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b',
+      600: '#475569',
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0f172a',
+    },
+  },
+  dark: {
+    background: '#0f172a',
+    surface: '#1e293b',
+    text: '#f1f5f9',
+    textSecondary: '#cbd5e1',
+    textMuted: '#64748b',
+    border: '#334155',
+    rose: {
+      50: '#fff1f2',
+      100: '#ffe4e6',
+      500: '#f43f5e',
+      600: '#e11d48',
+      950: '#4c0519',
+    },
+    red: {
+      600: '#dc2626',
+      900: '#7f1d1d',
+      950: '#450a0a',
+    },
+    emerald: {
+      50: '#ecfdf5',
+      500: '#10b981',
+      950: '#022c22',
+    },
+    slate: {
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0f172a',
+    },
+  },
+};
+
